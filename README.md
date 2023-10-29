@@ -1,2 +1,2 @@
-# kwerendy_SQL_zestaw_Bazy-danych-lekcja-3-
+# _Bazy-danych-
 Piotr Domurad
