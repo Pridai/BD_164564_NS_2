@@ -1,0 +1,63 @@
+3.1
+ CREATE TABLE postac (
+    -> postac_id int AUTO_INCREMENT,
+    -> nazwa varchar(40),
+    -> rodzaj varchar(12),
+    -> data_urodzenia varchar(15),
+    -> wiek int UNSIGNED,
+    -> PRIMARY KEY (postac_id)
+    -> );
+mysql> INSERT INTO postac
+    -> (nazwa)
+    -> VAlUES ('Bjorn');
+Query OK, 1 row affected (0.00 sec)
+
+mysql> UPDATE postac
+    -> SET nazwa = 'Bjorn'
+    -> Where postac_id = 1;
+
+mysql> INSERT INTO postac
+    -> (nazwa)
+    -> VALUES ('Drozd');
+Query OK, 1 row affected (0.01 sec)
+
+mysql> UPDATE postac
+    -> SET nazwa = 'Drozd'
+    -> WHERE postac_id = 2;
+Query OK, 0 rows affected (0.00 sec)
+Rows matched: 1  Changed: 0  Warnings: 0
+
+mysql> INSERT INTO postac
+    -> (nazwa)
+    -> VALUES ('Tesciowa')
+    -> ;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> UPDATE postac
+    -> SET nazwa = 'Tesciowa'
+    -> WHERE postac_id = 3;
+
+mysql> UPDATE postac
+    -> SET rodzaj = 'wiking'
+    -> WHERE postac_id = 1;
+
+mysql> UPDATE postac
+    -> SET rodzaj = 'ptak'
+    -> WHERE postac_id = 2;
+Query OK, 1 row affected (0.01 sec)
+Rows matched: 1  Changed: 1  Warnings: 0
+
+mysql> UPDATE postac
+    -> SET rodzaj = 'tesciowa'
+    -> WHERE postac_id = 3;
+
+mysql> UPDATE postac
+    -> SET wiek = '88'
+    -> WHERE postac_id = 3;
+
+
+
+
+
+
+
